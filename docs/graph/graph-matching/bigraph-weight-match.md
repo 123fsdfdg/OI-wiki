@@ -1,10 +1,10 @@
-author: accelsao, Enter-tainer, guodong2005, StudyingFather, Backl1ght, Chrogeek, H-J-Granger, Henry-ZHR
+author: accelsao, Enter-tainer, guodong2005, StudyingFather, Backl1ght, Chrogeek, H-J-Granger, Henry-ZHR, 123fsdfdg
 
 二分图的最大权匹配是指二分图中边权和最大的匹配。
 
 ## Hungarian Algorithm（Kuhn–Munkres Algorithm）
 
-匈牙利算法又称为 **KM** 算法，可以在 $O(n^3)$ 时间内求出二分图的 **最大权完美匹配**。
+匈牙利算法（其优化后称为**KM**算法），可以在 $O(n^3)$ 时间内求出二分图的 **最大权完美匹配**。
 
 考虑到二分图中两个集合中的点并不总是相同，为了能应用 KM 算法解决二分图的最大权匹配，需要先作如下处理：将两个集合中点数比较少的补点，使得两边点数相同，再将不存在的边权重设为 $0$，这种情况下，问题就转换成求 **最大权完美匹配问题**，从而能应用 KM 算法求解。
 
